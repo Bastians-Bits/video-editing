@@ -1,4 +1,13 @@
 #!/bin/bash
+###
+# Rename an audio stream without processing the video
+#
+# Requires:
+# - ffprobe
+# - ffprobe
+#
+# Takes the input file as the first argument
+###
 
 file_extension=$(echo ${1##*.})
 
