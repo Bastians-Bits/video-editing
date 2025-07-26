@@ -1,4 +1,15 @@
 #!/bin/bash
+###
+# Extract all subtitle streams out of a mkv container
+#
+# Required:
+# - ffmpeg
+# - ffprobe
+#
+# Takes the first argument as the input file.
+# Outputs will be written in the same folder using {filename without extension}.{stream number}.{language}.mkv
+###
+
 #set -x
 file_extension=$(echo ${1##*.})
 file_name=$(basename "${1}" .${file_extension})
